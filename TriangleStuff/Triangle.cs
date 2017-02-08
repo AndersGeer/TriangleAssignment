@@ -27,18 +27,15 @@
             {
                 return NotTriangle;
             }
-            else if(_a == _b && _b == _c)
+            if(_a == _b && _b == _c)
             {
                 return EquilateralTriangle;
             }
-            else if ((_a == _b && _a!= _c) || (_b == _c && _b != _a))
+            if ((_a == _b && _a!= _c) || (_b == _c && _b != _a))
             {
                 return IsoscelesTriangle;
             }
-            else
-            {
-                return ScaleneTriangle;
-            }
+            return ScaleneTriangle;
         }
     }
 }
