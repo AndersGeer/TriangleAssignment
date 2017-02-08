@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace TriangleStuff
 {
@@ -10,14 +9,23 @@ namespace TriangleStuff
 
         public static void Main(string[] args)
         {
+            var a = 0;
+            var b = 0;
+            var c = 0;
             Console.WriteLine("Enter first number and press enter");
-            var a = int.Parse(Console.ReadLine());
+            var s = Console.ReadLine();
+            if (s != null) a = int.Parse(s);
 
             Console.WriteLine("Enter second number and press enter");
-            var b = int.Parse(Console.ReadLine());
+            s = Console.ReadLine();
+            if (s != null) b = int.Parse(s);
+
 
             Console.WriteLine("Enter thrid number and press enter");
-            var c = int.Parse(Console.ReadLine());
+
+
+            s = Console.ReadLine();
+            if (s != null) c = int.Parse(s);
 
             Triangle t = new Triangle(a,b,c);
 
